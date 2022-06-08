@@ -7,7 +7,7 @@ import (
 
 func main() {
 	buildInfo, ok := debug.ReadBuildInfo()
-	if ok {
+	if !ok {
 		fmt.Println("Failed to get version.")
 		return
 	}
